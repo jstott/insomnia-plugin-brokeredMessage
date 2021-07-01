@@ -14,8 +14,8 @@
     "name": "brokeredMessage",
     "displayName": "BrokeredMessage Plugin",
     "description": "Re-formats json body message as a BrokeredMessage in order to trigger Azure non-HTTP triggered Functions",
-    "icon": "media/icon.svg", 
-    "cover":"media/cover.png"
+    "icon": "media/icon.svg",
+    "cover": "media/cover.png"
   },
   "keywords": [
     "insomnia",
