@@ -1,7 +1,7 @@
 {
   "name": "insomnia-plugin-brokeredmessage",
-  "version": "1.0.1",
-  "description": "Re-formats json body message as a BrokeredMessage in order to trigger Azure non-HTTP triggered Functions",
+  "version": "1.0.2",
+  "description": "Re-formats json body message as a BrokeredMessage in order to trigger Azure non-HTTP Functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,15 +11,22 @@
     "url": "git+https://github.com/jstott/insomnia-plugin-brokeredMessage.git"
   },
   "insomnia": {
-    "name": "brokeredMessage",
+    "name": "insomnia-plugin-brokeredmessage",
     "displayName": "BrokeredMessage Plugin",
-    "description": "Re-formats json body message as a BrokeredMessage in order to trigger Azure non-HTTP triggered Functions",
+    "description": "Re-formats json body message as a BrokeredMessage in order to trigger Azure non-HTTP Functions",
+    "images": {
     "icon": "media/icon.svg",
     "cover": "media/cover.png"
+    },
+    "publisher": {
+      "name": "J.W. Stott", 
+      "icon": "https://www.gravatar.com/avatar/d4bcaae437ace619b2cb0df229af669f?s=400"
+    }
   },
   "keywords": [
     "insomnia",
     "plugin",
+    "insomnia-plugin",
     "plugins",
     "brokeredMessage",
     "azure",

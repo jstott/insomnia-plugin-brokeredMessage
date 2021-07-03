@@ -1,5 +1,5 @@
 # insomnia-plugin-brokeredMessage
-Insomnia plugin to re-format json body message as a BrokeredMessage in order to trigger Azure non-HTTP triggered Functions
+Insomnia plugin to re-format json body message as a BrokeredMessage in order to trigger Azure non-HTTP Functions
 
 ## Issue this solves
 Suppose you have an Azure Function that is triggered from an Azure Service Bus (queue or topic subscription). You want to test this (locally) and call the running Azure Function from Insomnia as it is described in the MS docs [here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-manually-run-non-http).
@@ -15,7 +15,7 @@ The http post will call the local Azure Function, and you'll receive a 202 Accep
 
 
 ```
-[2021-07-01T17:53:41.362Z] Executed 'Functions.bmsTicketHandler' (Failed, Id=xxx, Duration=133ms)
+[2021-07-01T17:53:41.362Z] Executed 'Functions.myHandler' (Failed, Id=xxx, Duration=133ms)
 [2021-07-01T17:53:41.363Z] System.Private.CoreLib: Exception while executing function: Functions.myTopicHandler. Microsoft.Azure.WebJobs.Host: Exception binding parameter option binding parameter 'eventMsg'. Microsoft.Azure.WebJobs.ServiceBus: Unable to convert trigger to BrokeredMessage.
 ```
 
